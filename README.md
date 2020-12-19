@@ -15,16 +15,16 @@ Thanks,
 - [x] Creating basic prodecural platforms.
 - [x] Implementing basic character and animations.
 - [x] Basic GitHub knowledge.
-- [] Combat System.
-- [] Obstacles.
-- [] Enemy Spawn System.
-- [] Points System.
-- [] More Playable Characters.
-- [] DoTween basics.
-- [] More Platform Types.
-- [] Multiplayer.
-- [] Game Modes.
-- [] Basic UI.
+- [ ] Combat System.
+- [ ] Obstacles.
+- [ ] Enemy Spawn System.
+- [ ] Points System.
+- [ ] More Playable Characters.
+- [ ] DoTween basics.
+- [ ] More Platform Types.
+- [ ] Multiplayer.
+- [ ] Game Modes.
+- [ ] Basic UI.
 
 [Youtube](https://www.youtube.com/playlist?list=PLdCyf85CeulAWwIjnkamIFm8yPKtIzoAt).
 [Twitch](https://Twitch.tv/legatusleman/).
