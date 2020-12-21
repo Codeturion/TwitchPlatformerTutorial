@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject[] platformPrefabs;
+    public GameObject[] attackablePrefabs;
     public int platformSpawnCount;
 
     public Vector3 lastEndPoint;
@@ -20,6 +21,17 @@ public class GameManager : MonoBehaviour
             Platform platformScript = platform.GetComponent<Platform>();
 
             platform.transform.position = lastEndPoint;
+
+
+            int x = Random.Range(0, 10);
+            
+            if (x >= 8)
+            {
+                GameObject tree = GameObject.Instantiate(attackablePrefabs[Random.Range(0, attackablePrefabs.Length)]);
+                {
+                    tree.transform.position = lastEndPoint + new Vector3(0,2.7f,0);
+                }
+            }
             
             lastEndPoint = platformScript.ReturnEndPoint();
 
