@@ -26,5 +26,19 @@ public class CharacterAnimationController : MonoBehaviour
         animator.SetBool("isJumping", false);
     }
 
+    public void StopRunningAnim()
+    {
+        animator.SetBool("isRunning", false);
+    }
+
+    public void StopJumpingAnim()
+    {
+        animator.SetBool("isJumping", false);
+    }
+
+    public void TriggerAttackAnimation()
+    {
+        animator.SetTrigger("Attacking");
+    }
 
 }

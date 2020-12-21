@@ -48,7 +48,6 @@ public class CharacterMovementController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        SetCharacterState();
         HandleMovement();
         PlayAnimationsBasedOnState();
         SetCharacterDirection();
@@ -89,37 +88,14 @@ public class CharacterMovementController : MonoBehaviour
             }
         }
     }
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         RaycastHit2D raycastHit2D = Physics2D.BoxCast(spriteRenderer.bounds.center,
             spriteRenderer.bounds.size, 0f, Vector2.down,
             isGroundedRayLength, platformLayerMask);
         return raycastHit2D.collider != null;
     }
-    private void SetCharacterState()
-    {
-        if (IsGrounded())
-        {
-            if (rigidBody2D.velocity.x == 0)
-            {
-                movementState = MovementStates.Idle;
-            }
-            else if (rigidBody2D.velocity.x > 0)
-            {
-                facingDirection = FacingDirection.Right;
-                movementState = MovementStates.Running;
-            }
-            else if (rigidBody2D.velocity.x < 0)
-            {
-                facingDirection = FacingDirection.Left;
-                movementState = MovementStates.Running;
-            }
-        }
-        else
-        {
-            movementState = MovementStates.Jumping;
-        }
-    }
+   
     private void SetCharacterDirection()
     {
         switch (facingDirection)
@@ -150,5 +126,10 @@ public class CharacterMovementController : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void SetMovementState(MovementStates movementStates)
+    {
+        movementState = movementStates;
     }
 }
