@@ -15,12 +15,12 @@ Thanks,
 - [x] Creating basic prodecural platforms.
 - [x] Implementing basic character and animations.
 - [x] Basic GitHub knowledge.
-- [ ] Combat System.
+- [x] Combat System.
 - [ ] Obstacles.
 - [ ] Enemy Spawn System.
 - [ ] Points System.
 - [ ] More Playable Characters.
-- [ ] DoTween basics.
+- [x] DoTween basics.
 - [ ] More Platform Types.
 - [ ] Multiplayer.
 - [ ] Game Modes.
