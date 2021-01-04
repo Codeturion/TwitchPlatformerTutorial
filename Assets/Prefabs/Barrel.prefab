@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8775644791475122942}
   - component: {fileID: 8775644791475122943}
   - component: {fileID: 3417993803910005919}
-  - component: {fileID: 8005898579294084055}
+  - component: {fileID: 8701395385943807219}
   m_Layer: 9
-  m_Name: Tree
+  m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: cc592d4361fab6b40a90a4c263ea53c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fbf5a7831ea7a6f459e085ea87cf25cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,20 +96,20 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.26635718, y: 0}
+  m_Offset: {x: 0.0006725788, y: -0.00000047683716}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.708, y: 4.484}
+    oldSize: {x: 1.16, y: 1.28}
     newSize: {x: 11.77, y: 11.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7827325, y: 4.484}
+  m_Size: {x: 1.1886177, y: 1.3223667}
   m_EdgeRadius: 0
---- !u!114 &8005898579294084055
+--- !u!114 &8701395385943807219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,8 +118,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8775644791475122912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41b8d3a0707e5d3468bfcca399304d1b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b0b72aced1e3bb44b06b2ca2e6f6148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 25
   spriteRenderer: {fileID: 8775644791475122943}

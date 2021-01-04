@@ -22,11 +22,11 @@ public class CharacterCombat : MonoBehaviour
 
         if (hitResults == null)
             return;
-        foreach(Collider2D hit in hitResults)
+        foreach (Collider2D hit in hitResults)
         {
-            if(hit.GetComponent<Health>() != null) 
+            if (hit.GetComponent<IDamageable<int>>() != null)
             {
-                hit.GetComponent<Health>().TakeDamage(attackDamage);
+                hit.GetComponent<IDamageable<int>>().TakeDamage(attackDamage);
             }
         }
     }

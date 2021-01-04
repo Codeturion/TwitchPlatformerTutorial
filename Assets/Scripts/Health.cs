@@ -5,51 +5,32 @@ using DG.Tweening;
 
 public class Health : MonoBehaviour
 {
-    public enum AttackableObjectType
-    {
-        Player,
-        Tree
-    }
-    public int health;
-    public SpriteRenderer spriteRenderer;
-    public AttackableObjectType objectType;
-
-
-      
-    public void TakeDamage(int damage)
+    public int health;   
+        
+    public virtual void TakeDamage(int damage)
     {
         health -= damage;
-        if(objectType == AttackableObjectType.Tree)
-        {
-            HitFeedBack();
-        }
-        CheckIfWeDead();
     }
 
-    protected void CheckIfWeDead()
+    protected virtual void HitFeedBack()
     {
-        if(health <= 0)
+        // POP UP here
+        Debug.Log("Hit feedback is playing");
+    }
+
+    protected virtual void OnDeath()
+    {
+        Debug.Log("You are die");
+    }
+
+    protected bool CheckIfWeDead()
+    {
+        if (health <= 0)
         {
             health = 0;
-            if(objectType == AttackableObjectType.Tree)
-            {
-                TreeDestroyFeedBack();
-            }
+            return true;
         }
-    }
-
-    private void HitFeedBack()
-    {
-        this.gameObject.transform.DOShakePosition(0.15f, new Vector3(0.4f, 0.1f, 0), 10, 90);
-        Tween colorTween = spriteRenderer.DOBlendableColor(Color.red, 0.1f);
-        colorTween.OnComplete(() => spriteRenderer.DOBlendableColor(Color.white, 0.05f));
-    }
-
-    private void TreeDestroyFeedBack()
-    {
-        this.gameObject.transform.DOShakePosition(0.15f, new Vector3(0.4f, 0.1f, 0), 10, 90);
-        Tween colorTween = spriteRenderer.DOBlendableColor(Color.red, 0.1f);
-        colorTween.OnComplete(() => Destroy(gameObject));
+        return false;
     }
 
 
