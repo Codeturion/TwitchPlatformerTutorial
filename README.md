@@ -11,7 +11,7 @@ I hope you enjoy it!
 Thanks,
 **Fuat**
 
-##Current Progress:
+## Current Progress:
 - [x] Creating basic prodecural platforms.
 - [x] Implementing basic character and animations.
 - [x] Basic GitHub knowledge.
