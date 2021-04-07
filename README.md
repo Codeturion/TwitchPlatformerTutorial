@@ -16,16 +16,17 @@ Thanks,
 - [x] Implementing basic character and animations.
 - [x] Basic GitHub knowledge.
 - [x] Combat System.
-- [ ] Obstacles.
-- [ ] Enemy Spawn System.
-- [ ] Points System.
-- [ ] More Playable Characters.
 - [x] DoTween basics.
+- [x] Obstacles.
+- [ ] Points System.
+- [ ] Collectables.
+- [ ] Game development-related design patterns.
+- [ ] Enemy Spawn System.
+- [ ] More Playable Characters.
 - [ ] More Platform Types.
-- [ ] Multiplayer.
 - [ ] Game Modes.
 - [ ] Basic UI.
-
+- [ ] Multiplayer(Mirror or MLAPI).
 [Youtube](https://www.youtube.com/playlist?list=PLdCyf85CeulAWwIjnkamIFm8yPKtIzoAt).
 [Twitch](https://Twitch.tv/legatusleman/).
 [Discord](https://discord.gg/legatusleman/).
